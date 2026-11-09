@@ -113,43 +113,37 @@ Tiếp nhận lỗi → Phân tích triệu chứng → Nhận diện lỗi có 
 
 - Card số: 3
 - Vì sao: Lỗi người dùng có thể xuất hiện lặp lại, khiến người xử lý phải tìm lại thông tin hoặc hỏi đồng nghiệp về hướng giải quyết.
-- Câu hỏi muốn nhóm phản biện: Khi gặp lỗi tương tự, người xử lý có thực sự phải hỏi đồng nghiệp hay đã có thể tự tìm được thông tin trong hệ thống?
+- Câu hỏi muốn nhóm phản biện: Câu hỏi muốn nhóm phản biện: Khi gặp lỗi tương tự, người xử lý có thực sự phải hỏi đồng nghiệp hay đã có thể tự tìm được thông tin trong hệ thống?
 
 ### AI đã phản biện card thế nào
 
 | Điểm yếu AI chỉ ra | Đồng ý? | Đã sửa gì |
 |---|---|---|
-| Chưa xác định rõ ai là người trực tiếp gặp pain.|Có | Xác định Support, BA hoặc Developer là các vai trò có thể chịu ảnh hưởng; cần phỏng vấn để xác định actor chính.|
+|Chưa xác định rõ ai là người trực tiếp gặp pain. | Có|Xác định Support, BA hoặc Developer là các vai trò có thể chịu ảnh hưởng; cần phỏng vấn để xác định actor chính.|
 
 ---
 
 ## 4. Tôi đã tham gia phần nào (CP3 → CP7)
 
-| Hoạt động | Tôi đã làm gì? | Kết quả / ảnh hưởng tới bài nhóm |
-|---|---|---|
-| Pitch Problem Card | | |
-| Phản biện bài của bạn khác | Câu hỏi tôi đã đặt: | |
-| Nhận phản biện | Câu hỏi tôi nhận được: | Tôi đã sửa gì: |
-| Gom cluster / cây OST | | |
-| Chọn candidate problem | | |
-| Kiểm chứng / research | | |
-| Quy trình nhóm | | |
-| Problem Statement | | |
-| Mức can thiệp AI | | |
-| Quyết định | | |
+| Hoạt động | Tôi đã làm gì?                                                                                                | Kết quả / ảnh hưởng tới bài nhóm                                                                 |
+|---|---------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------|
+| Pitch Problem Card | Chuẩn bị 3 Card: Chốt ticket sprint, Xử lý lỗi đã xuất hiện, Ticket thiếu thông tin.                          | Vào shortlist và được chọn.                                                                      |
+| Phản biện bài của bạn khác | Câu hỏi tôi đã đặt:   Hỏi Huy: README đã chỉ dẫn các file cụ thể, chỗ nào khiến bạn vẫn phải dò thêm 15 phút? | Huy nhận định rằng chỉ dẫn README chưa đủ rõ ràng.                                               |
+| Nhận phản biện | Câu hỏi tôi nhận được:     Lần gần nhất xử lý lại lỗi cũ, bạn đã tìm hướng xử lý ở đâu và mất bao lâu?        | Câu hỏi giúp nhóm thấy #6 còn thiếu một ca xử lý cụ thể và thời gian tìm.                        |
+| Chọn candidate problem | Nhóm thống nhất chọn #6 — tìm lại thông tin và cách xử lý lỗi cũ.                                             | Nhóm chuyển sang phác thảo quy trình và tìm cách kiểm chứng; lựa chọn vẫn cần bằng chứng thực tế. |
+| Kiểm chứng / research | Tìm và lựa chọn các phương án đã có.                                                                          | Bảng research của nhóm đã có nguồn, nhưng phần kiểm chứng với người thật còn hạn chế.            |
+| Quyết định | Quyết định Not Yet với AI.                                                                                    | Cả nhóm bàn luận và đưa ra quyết định cuối cùng.                                                 |
 
 ---
 
 ## 5. Dùng AI
 
-| Checkpoint | Tôi dùng AI để làm gì? | AI hữu ích ở đâu? | AI sai hoặc hời hợt ở đâu? | Tôi sửa gì bằng nhận định của mình? |
-|---|---|---|---|---|
-| CP1 Scan | | | | |
-| CP2 Problem Card | | | | |
-| CP4 Research | | | | |
-| CP5 Quy trình | | | | |
-| CP5–6 Problem Statement | | | | |
-| CP6 Mức can thiệp / quyết định | | | | |
+| Checkpoint | Tôi dùng AI để làm gì?                          | AI hữu ích ở đâu?                                                               | AI sai hoặc hời hợt ở đâu?                                  | Tôi sửa gì bằng nhận định của mình?                        |
+|---|-------------------------------------------------|---------------------------------------------------------------------------------|-------------------------------------------------------------|------------------------------------------------------------|
+| CP1 Scan | Gợi ý thêm problem theo vai trò BA              | Đưa ra thêm được problems                                                       | Một số problem có nội dung tương tự nhau                    | Bỏ đi 1 số problem không cần thiết                         |
+| CP2 Problem Card | Nhờ AI đưa ra phản biệt cho các problem card    | Phát hiện những phần còn thiếu và gợi ý các chỉ số có thể dùng để đo lường pain | Một số nội dung còn chung chung, xác định chưa chính xác                                                            | Kiểm tra lại tình huống thực tế từ việc phỏng vấn          |
+| CP4 Research | Tìm các giải pháp và công cụ                    | Gợi ý: Jira Cloud, GitHub Issues, Jira Rovo                                     |             Một số nhận định về giải pháp còn khái quát, chưa chỉ rõ giới hạn và điều kiện sử dụng             | Kiểm tra lại nguồn thông tin  về từng giải pháp            |
+| CP6 Mức can thiệp / quyết định | Nhờ AI đưa ra phản biện đối với từng quyết định | Giúp đưa ra được mức độ đáp ứng của công cụ, giải pháp hiện tại                 | AI chưa có đủ dữ liệu thực tế để kết luận giải pháp phù hợp | Nhóm dựa vào phản biện của AI và chốt quyết định cuối cùng |
 
 ---
 
@@ -159,18 +153,30 @@ Trả lời bằng trải nghiệm thật của bạn, tối thiểu 200 từ ch
 
 **6.1. Tôi học được gì khi nghe top 3 problems của các bạn khác?**
 
+Sau khi nghe 3 problems của các bạn khác, tôi có thể mở rộng góc nhìn, học cách nhìn vấn đề từ trải nghiệm của người khác. Tôi nhận ra những công việc tưởng chừng đơn giản vẫn có thể gây lãng phí thời gian và ảnh hưởng đến nhiều người nếu xảy ra thường xuyên.
+
 **6.2. Nhóm có lúc nào bị "solution-first" (nghĩ giải pháp trước khi hiểu vấn đề) không? Lúc đó nhóm nhận ra và xử lý thế nào?**
+
+Có, khi phân tích vấn đề tra cứu lỗi cũ, nhóm từng nghĩ ngay đến việc xây dựng hệ thống lưu trữ lỗi hoặc sử dụng AI để tìm kiếm. Sau đó, nhóm nhận ra cần hiểu rõ pain thực tế và tìm hiểu các công cụ hiện có trước khi lựa chọn giải pháp.
 
 **6.3. Tôi có đổi ý sau khi bị phản biện không? Kể một lần cụ thể.**
 
+Có, ban đầu tôi cho rằng vấn đề tra cứu lỗi cũ rất đáng ưu tiên vì người xử lý thường phải hỏi đồng nghiệp. Tuy nhiên, sau khi phản biện, tôi nhận ra nhóm chưa có đủ bằng chứng về tần suất lỗi lặp lại và thời gian tìm kiếm, nên cần kiểm chứng thêm trước khi quyết định.
+
 **6.4. Kết quả kiểm chứng (phỏng vấn/survey/research) có làm tôi bất ngờ không? Điều gì?**
+
+Điều khiến tôi bất ngờ là thị trường đã có nhiều công cụ như Jira nhưng chưa thực sự có nhiều quy trình cụ thể với pain này.
 
 **6.5. Điều khó nhất khi viết Problem Statement là gì?**
 
+Điều khó nhất đối với tôi là xác định đúng người thực sự gặp pain và phân biệt biểu hiện của vấn đề với nguyên nhân gốc rễ. Ngoài ra, việc viết Job Story ngắn gọn nhưng vẫn thể hiện đầy đủ bối cảnh, mong muốn và mục đích cũng khá khó khăn.
+
 **6.6. Nếu làm lại, tôi sẽ đổi gì? Tôi sẽ phản biện nhóm mạnh hơn ở điểm nào?**
 
-**6.7. Hiểu bài:** giải thích bằng 5–8 câu, không nhìn tài liệu, chuỗi *problem → quy trình → metric → boundary → mức can thiệp AI → quyết định* của bài nhóm mình.
+Nếu làm lại, tôi sẽ phỏng vấn người dùng và thu thập bằng chứng thực tế sớm hơn, đồng thời nghiên cứu các giải pháp hiện có ngay từ đầu thay vì chỉ dựa vào cảm nhận cá nhân.
 
+**6.7. Hiểu bài:** giải thích bằng 5–8 câu, không nhìn tài liệu, chuỗi *problem → quy trình → metric → boundary → mức can thiệp AI → quyết định* của bài nhóm mình.
+Vấn đề nhóm tôi lựa chọn là người xử lý gặp khó khăn khi tra cứu các lỗi đã từng xuất hiện và thường phải hỏi đồng nghiệp về hướng xử lý. Quy trình hiện tại gồm tiếp nhận lỗi, phân tích triệu chứng, tìm kiếm ticket hoặc tài liệu cũ, hỏi đồng nghiệp nếu không tìm thấy thông tin, sau đó tiến hành xử lý lỗi. Nhóm sử dụng các metric như thời gian tìm được thông tin lỗi cũ, số lần phải hỏi đồng nghiệp và tỷ lệ lỗi lặp lại tìm được hướng xử lý. Phạm vi giải quyết chỉ tập trung vào việc tra cứu và tham khảo thông tin các lỗi đã được ghi nhận, không tự động kết luận nguyên nhân hoặc quyết định cách sửa lỗi. AI có thể được sử dụng để tìm kiếm các lỗi tương tự bằng ngữ nghĩa và tóm tắt hướng xử lý đã có, nhưng người xử lý vẫn phải kiểm tra và xác nhận. Nhóm ưu tiên cách tiếp cận kết hợp tìm kiếm thông thường với AI khi cần thiết, thay vì để AI tự động xử lý lỗi. Quyết định hiện tại là Not Yet, vì nhóm cần kiểm chứng thêm tần suất lỗi lặp lại, thời gian tra cứu và số người thực sự gặp vấn đề trước khi quyết định triển khai.
 ---
 
 ## 7. Tài liệu tham khảo
