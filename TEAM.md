@@ -6,7 +6,7 @@
 
 - Tên nhóm: TwoGuys
 - Candidate problem nhóm chọn (1 câu): Khi xử lý lỗi từng xuất hiện, tôi muốn tìm lại thông tin và cách xử lý cũ, để không phải hỏi người khác lần nữa.
-- Quyết định cuối (Go / Not Yet / No-Go): Not Yet
+- Quyết định cuối (Go / Not Yet / No-Go):
 
 ## Thành viên
 
