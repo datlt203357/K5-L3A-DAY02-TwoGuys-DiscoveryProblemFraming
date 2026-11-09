@@ -8,7 +8,7 @@
 - Tên nhóm: TwoGuys
 - Thành viên: xem `TEAM.md`
 - Candidate problem được chọn (1 câu): Khi xử lý lỗi từng xuất hiện, tôi muốn tìm lại thông tin và cách xử lý cũ, để không phải hỏi người khác lần nữa.
-- Quyết định cuối: Go / Not Yet / No-Go
+- Quyết định cuối: Not Yet 
 
 ---
 
@@ -24,12 +24,7 @@
 | 4 | Lê Thành Đạt| Khi nhận ticket từ BA, tôi muốn rõ đầu vào, đầu ra và ngoại lệ, để không phải hỏi lại trước khi code.| Người nhận ticket để code| Đọc ticket nhưng chưa rõ đầu vào, đầu ra hoặc ngoại lệ; phải hỏi lại BA. Cần xác nhận thời gian/số lần hỏi.| Lần gần nhất ticket thiếu thông tin gì và bạn phải hỏi lại BA bao nhiêu lần?(Huy)|
 | 5 | Lê Thành Đạt| Khi chốt sprint hằng tuần, tôi muốn hoàn tất log ticket, để công việc đã làm được ghi nhận đầy đủ.| Người thực hiện công việc trong sprint| Bổ sung log ticket vào lúc chốt sprint. Cần xác nhận bước nào mất thời gian nhất.| Bước nào trong việc log ticket lúc chốt sprint khiến bạn mất thời gian nhất?(Huy)|
 | 6 |Lê Thành Đạt | Khi xử lý lỗi từng xuất hiện, tôi muốn tìm lại thông tin và cách xử lý cũ, để không phải hỏi người khác lần nữa.| Người xử lý lỗi| Tìm lại thông tin và cách xử lý lỗi cũ. Cần xác nhận tìm ở đâu và mất bao lâu.| Lần gần nhất xử lý lại lỗi cũ, bạn đã tìm hướng xử lý ở đâu và mất bao lâu?(Huy)|
-| 7 | | | | | |
-| 8 | | | | | |
-| 9 | | | | | |
-| 10 | | | | | |
-| 11 | | | | | |
-| 12 | | | | | |
+ 
 
 ### 2.2. Cluster
 
@@ -79,38 +74,38 @@ Những ý đã gạch bỏ vì là solution đội lốt opportunity:
 ### 3.1. Assumption Map
 
 | # | Giả định | Loại (Value / Usability / Feasibility / Viability) | Quan trọng (1–5) | Đã có bằng chứng (1–5) | Kiểm chứng trước? |
-|---:|---|---|---:|---:|---|
-| 1 |Những lỗi người dùng báo cáo có xu hướng lặp lại theo thời gian. | | | | |
-| 2 |Người xử lý thường phải hỏi đồng nghiệp khi gặp lỗi đã từng xuất hiện. | | | | |
-| 3 |Thông tin về lỗi cũ và cách xử lý đang phân tán ở nhiều nơi hoặc khó tìm. | | | | |
-| 4 |Việc hỏi đồng nghiệp làm tăng thời gian xử lý lỗi. | | | | |
-| 5 |Có nhiều người trong nhóm cùng gặp khó khăn tra cứu lỗi cũ. | | | | |
-| 6 |Các công cụ hiện tại chưa đáp ứng tốt nhu cầu tìm lỗi tương tự và hướng xử lý.| | | | |
+|---:|---|----------------------------------------------------|-----------------:|-----------------------:|---|
+| 1 |Những lỗi người dùng báo cáo có xu hướng lặp lại | Value                                              |                5 |                      1 |Có |
+| 2 |Người xử lý thường phải hỏi đồng nghiệp khi gặp lỗi đã từng xuất hiện. | Value                                                |                5 |                      2 | Có|
+| 3 |Thông tin về lỗi cũ và cách xử lý đang phân tán ở nhiều nơi hoặc khó tìm. | Usability	                                              |                5 |                      1 |Có |
+| 4 |Việc hỏi đồng nghiệp làm tăng thời gian xử lý lỗi. | Value                                               |                5 |                      1 |Có |
+| 5 |Có nhiều người trong nhóm cùng gặp khó khăn tra cứu lỗi cũ. | Value                                     |                4 |                      1 | Có|
+| 6 |Các công cụ hiện tại chưa đáp ứng tốt nhu cầu tìm lỗi tương tự và hướng xử lý.| Usability	                                                |                4 |                      1 |Có |
 
 *Điền 4–6 giả định; xóa dòng thừa.*
 
-Giả định nhóm kiểm chứng trong buổi này:
+Giả định nhóm kiểm chứng trong buổi này: Người xử lý có thường xuyên phải hỏi đồng nghiệp không?
 
 ### 3.2. Kiểm chứng
 
-Cách đã dùng: Phỏng vấn / Survey / Log, ticket, review
+Cách đã dùng: Nhóm phỏng vấn 2 BA/Hỗ trợ người dùng quen biết (theo The Mom Test)
 
 Interview snapshot (mỗi buổi phỏng vấn một bảng, hoặc đặt file trong `report/assets/cp4-interview-snapshot-N.md`):
 
-| Trường | Nội dung |
-|---|---|
-| Người được hỏi (vai trò, không ghi tên thật) | |
-| Câu nói đáng nhớ nhất (nguyên văn) | |
-| Lần gần nhất gặp vấn đề này: chuyện gì đã xảy ra? | |
-| Hiện đang xử lý bằng cách nào (workaround)? | |
-| Mất bao lâu, bao lần? | |
-| Insight / opportunity rút ra | |
+| Trường | Nội dung                          |
+|---|-----------------------------------|
+| Người được hỏi (vai trò, không ghi tên thật) | BA, công ty công nghệ domain y tế |
+| Câu nói đáng nhớ nhất (nguyên văn) |                                   |
+| Lần gần nhất gặp vấn đề này: chuyện gì đã xảy ra? |                                   |
+| Hiện đang xử lý bằng cách nào (workaround)? |                                   |
+| Mất bao lâu, bao lần? |                                   |
+| Insight / opportunity rút ra |                                   |
 
 Tổng hợp:
 
-| Nguồn | Số người / số mẫu | Tín hiệu xác nhận | Tín hiệu phản bác |
-|---|---:|---|---|
-| | | | |
+| Nguồn     | Số người / số mẫu | Tín hiệu xác nhận | Tín hiệu phản bác |
+|-----------|------------------:|---|-------------------|
+| Phỏng vấn |               2/2 | | Không có          |
 
 **Nhóm đã sửa problem thế nào sau kiểm chứng:**
 
