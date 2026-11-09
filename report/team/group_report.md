@@ -57,15 +57,15 @@ Những ý đã gạch bỏ vì là solution đội lốt opportunity:
 | #1 — Tìm đúng yêu cầu trong tài liệu lab | 5 | 4 | 3 | 4 | 5 | 4 | 5 | **30** |
 | #2 — Thống nhất tên Use Case khi làm đồ án nhóm | 5 | 4 | 4 | 5 | 4 | 3 | 4 | **29** |
 
-*Điểm tham khảo dựa trên thông tin hiện có; nhóm cần xem lại cùng nhau. #6 chưa có lần xử lý lỗi cụ thể, thời gian tìm kiếm hoặc quy trình từng bước nên các cột bằng chứng, quy trình và impact đang ở mức 2/5.*
+
 
 **Candidate được chọn:** #6 — Tìm lại thông tin và cách xử lý lỗi cũ.
 
-**Vì sao chọn (bản nháp, nhóm cần xác nhận):** Nhóm ưu tiên #6 để kiểm chứng sâu hơn việc người xử lý lỗi phải tìm lại thông tin và cách xử lý của lỗi từng xuất hiện. Bảng điểm hiện tại cho thấy #6 còn thiếu bằng chứng, quy trình cụ thể và số đo impact; vì vậy lựa chọn này là **tạm thời**. Ở CP4, nhóm cần ghi lại ít nhất một lần xử lý lỗi cũ thực tế: đã tìm ở đâu, mất bao lâu, tìm được gì và có phải hỏi người khác không. Nếu kiểm chứng không xác nhận pain này, nhóm sẽ xem lại lựa chọn.
+**Vì sao chọn:** Nhóm ưu tiên #6 để kiểm chứng sâu hơn việc người xử lý lỗi phải tìm lại thông tin và cách xử lý của lỗi từng xuất hiện. Bảng điểm hiện tại cho thấy #6 còn thiếu bằng chứng, quy trình cụ thể và số đo impact; vì vậy lựa chọn này là **tạm thời**. Ở CP4, nhóm cần ghi lại ít nhất một lần xử lý lỗi cũ thực tế: đã tìm ở đâu, mất bao lâu, tìm được gì và có phải hỏi người khác không. Nếu kiểm chứng không xác nhận pain này, nhóm sẽ xem lại lựa chọn.
 
-**Vì sao loại các candidate còn lại (bản nháp, nhóm cần xác nhận):** #1 có số đo 20 phút nhưng mới dựa trên một lần tìm yêu cầu của một học viên và gắn với cấu trúc repo lab cụ thể. #2 có hậu quả 2 ngày sửa bài, nhưng nhóm cần tách phần thời gian do đặt tên không thống nhất khỏi các lỗi khác của sơ đồ; phương án thống nhất quy tắc đặt tên trước khi chia việc có thể đủ để thử trước. Nhóm tạm ưu tiên kiểm chứng #6 thay vì đào sâu hai ý này.
+**Vì sao loại các candidate còn lại:** #1 có số đo 20 phút nhưng mới dựa trên một lần tìm yêu cầu của một học viên và gắn với cấu trúc repo lab cụ thể. #2 có hậu quả 2 ngày sửa bài, nhưng nhóm cần tách phần thời gian do đặt tên không thống nhất khỏi các lỗi khác của sơ đồ; phương án thống nhất quy tắc đặt tên trước khi chia việc có thể đủ để thử trước. Nhóm tạm ưu tiên kiểm chứng #6 thay vì đào sâu hai ý này.
 
-**Xử lý bất đồng (nếu có):**
+**Xử lý bất đồng (nếu có):** Không có
 
 ---
 
@@ -73,14 +73,14 @@ Những ý đã gạch bỏ vì là solution đội lốt opportunity:
 
 ### 3.1. Assumption Map
 
-| # | Giả định | Loại (Value / Usability / Feasibility / Viability) | Quan trọng (1–5) | Đã có bằng chứng (1–5) | Kiểm chứng trước? |
-|---:|---|----------------------------------------------------|-----------------:|-----------------------:|---|
-| 1 |Những lỗi người dùng báo cáo có xu hướng lặp lại | Value                                              |                5 |                      1 |Có |
-| 2 |Người xử lý thường phải hỏi đồng nghiệp khi gặp lỗi đã từng xuất hiện. | Value                                                |                5 |                      2 | Có|
-| 3 |Thông tin về lỗi cũ và cách xử lý đang phân tán ở nhiều nơi hoặc khó tìm. | Usability	                                              |                5 |                      1 |Có |
-| 4 |Việc hỏi đồng nghiệp làm tăng thời gian xử lý lỗi. | Value                                               |                5 |                      1 |Có |
-| 5 |Có nhiều người trong nhóm cùng gặp khó khăn tra cứu lỗi cũ. | Value                                     |                4 |                      1 | Có|
-| 6 |Các công cụ hiện tại chưa đáp ứng tốt nhu cầu tìm lỗi tương tự và hướng xử lý.| Usability	                                                |                4 |                      1 |Có |
+| # | Giả định                                                                       | Loại (Value / Usability / Feasibility / Viability) | Quan trọng (1–5) | Đã có bằng chứng (1–5) | Kiểm chứng trước? |
+|---:|--------------------------------------------------------------------------------|----------------------------------------------------|-----------------:|-----------------------:|---|
+| 1 |  Việc hỏi đồng nghiệp làm tăng thời gian xử lý lỗi.                             | Usability	                                              |                4 |                      1 |Có |
+| 2 | Người xử lý thường phải hỏi đồng nghiệp khi gặp lỗi đã từng xuất hiện.         | Value                                                |                5 |                      4 | Có|
+| 3 | Thông tin về lỗi cũ và cách xử lý đang phân tán ở nhiều nơi hoặc khó tìm.      | Usability	                                              |                5 |                      4 |Có |
+| 4 |    Có nhiều người trong nhóm cùng gặp khó khăn tra cứu lỗi cũ.                          | Value                                               |                5 |                      2 |Có |
+| 5 |     Các công cụ hiện tại chưa đáp ứng tốt nhu cầu tìm lỗi tương tự và hướng xử lý.                | Value                                     |                4 |                      2 | Có|
+
 
 *Điền 4–6 giả định; xóa dòng thừa.*
 
@@ -92,20 +92,20 @@ Cách đã dùng: Nhóm phỏng vấn 2 BA/Hỗ trợ người dùng quen biết
 
 Interview snapshot (mỗi buổi phỏng vấn một bảng, hoặc đặt file trong `report/assets/cp4-interview-snapshot-N.md`):
 
-| Trường | Nội dung                          |
-|---|-----------------------------------|
-| Người được hỏi (vai trò, không ghi tên thật) | BA, công ty công nghệ domain y tế |
-| Câu nói đáng nhớ nhất (nguyên văn) |                                   |
-| Lần gần nhất gặp vấn đề này: chuyện gì đã xảy ra? |                                   |
-| Hiện đang xử lý bằng cách nào (workaround)? |                                   |
-| Mất bao lâu, bao lần? |                                   |
-| Insight / opportunity rút ra |                                   |
+| Trường | Nội dung                                                                                                     |
+|---|--------------------------------------------------------------------------------------------------------------|
+| Người được hỏi (vai trò, không ghi tên thật) | BA, công ty công nghệ domain y tế                                                                            |
+| Câu nói đáng nhớ nhất (nguyên văn) | "Mỗi khi người dùng báo lỗi, mình phải lên nhóm hỏi đã có ai từng xử lý lỗi tương tự chưa rất mất thời gian" |
+| Lần gần nhất gặp vấn đề này: chuyện gì đã xảy ra? | Lần gần nhất xảy ra lỗi cũ, người hỗ trợ đã không biết cách xử lý cho người dùng                             |
+| Hiện đang xử lý bằng cách nào (workaround)? | Lưu lại các case lỗi đã từng xử lý vào 1 file excel                                                          |
+| Mất bao lâu, bao lần? | Mỗi lần phải vào file đọc từng lỗi một mất 15-20 phút                                                        |
+| Insight / opportunity rút ra | Cần có một hệ thống lưu lại và tìm kiếm thông tin các case lỗi và hướng xử lý                                |
 
 Tổng hợp:
 
-| Nguồn     | Số người / số mẫu | Tín hiệu xác nhận | Tín hiệu phản bác |
-|-----------|------------------:|---|-------------------|
-| Phỏng vấn |               2/2 | | Không có          |
+| Nguồn     | Số người / số mẫu | Tín hiệu xác nhận                                                                                            | Tín hiệu phản bác |
+|-----------|------------------:|--------------------------------------------------------------------------------------------------------------|-------------------|
+| Phỏng vấn |               2/2 | 2/2 nếu người biết xử lý không phản hồi câu hỏi thì phải đi tìm các ticket cũ, quy trình xử lý mất thời gian | Không có          |
 
 **Nhóm đã sửa problem thế nào sau kiểm chứng:**
 
