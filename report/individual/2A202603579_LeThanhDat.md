@@ -175,8 +175,10 @@ Có, ban đầu tôi cho rằng vấn đề tra cứu lỗi cũ rất đáng ưu
 
 Nếu làm lại, tôi sẽ phỏng vấn người dùng và thu thập bằng chứng thực tế sớm hơn, đồng thời nghiên cứu các giải pháp hiện có ngay từ đầu thay vì chỉ dựa vào cảm nhận cá nhân.
 
-**6.7. Hiểu bài:** giải thích bằng 5–8 câu, không nhìn tài liệu, chuỗi *problem → quy trình → metric → boundary → mức can thiệp AI → quyết định* của bài nhóm mình.
+**6.7. Hiểu bài: giải thích bằng 5–8 câu, không nhìn tài liệu, chuỗi *problem → quy trình → metric → boundary → mức can thiệp AI → quyết định* của bài nhóm mình.**
+
 Vấn đề nhóm tôi lựa chọn là người xử lý gặp khó khăn khi tra cứu các lỗi đã từng xuất hiện và thường phải hỏi đồng nghiệp về hướng xử lý. Quy trình hiện tại gồm tiếp nhận lỗi, phân tích triệu chứng, tìm kiếm ticket hoặc tài liệu cũ, hỏi đồng nghiệp nếu không tìm thấy thông tin, sau đó tiến hành xử lý lỗi. Nhóm sử dụng các metric như thời gian tìm được thông tin lỗi cũ, số lần phải hỏi đồng nghiệp và tỷ lệ lỗi lặp lại tìm được hướng xử lý. Phạm vi giải quyết chỉ tập trung vào việc tra cứu và tham khảo thông tin các lỗi đã được ghi nhận, không tự động kết luận nguyên nhân hoặc quyết định cách sửa lỗi. AI có thể được sử dụng để tìm kiếm các lỗi tương tự bằng ngữ nghĩa và tóm tắt hướng xử lý đã có, nhưng người xử lý vẫn phải kiểm tra và xác nhận. Nhóm ưu tiên cách tiếp cận kết hợp tìm kiếm thông thường với AI khi cần thiết, thay vì để AI tự động xử lý lỗi. Quyết định hiện tại là Not Yet, vì nhóm cần kiểm chứng thêm tần suất lỗi lặp lại, thời gian tra cứu và số người thực sự gặp vấn đề trước khi quyết định triển khai.
+
 ---
 
 ## 7. Tài liệu tham khảo
